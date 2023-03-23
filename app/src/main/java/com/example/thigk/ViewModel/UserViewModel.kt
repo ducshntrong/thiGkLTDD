@@ -29,23 +29,5 @@ class UserViewModel(application: Application): AndroidViewModel(application) {
             repository.addUser(user)
         }
     }
-    fun updateUser(user: User){
-        viewModelScope.launch(Dispatchers.IO) {
-            repository.updateUser(user)
-        }
-    }
-    fun deleteUser(user: User){
-        viewModelScope.launch(Dispatchers.IO) {
-            repository.deleteUser(user)
-        }
-    }
-    fun deleteAllUsers() {
-        viewModelScope.launch(Dispatchers.IO) {
-            repository.deleteAllUsers()
-        }
-    }
 
-//    fun searchDatabase(searchQuery: String): LiveData<List<User>>{
-//        return repository.searchDatabase(searchQuery).asLiveData()
-//    }
 }

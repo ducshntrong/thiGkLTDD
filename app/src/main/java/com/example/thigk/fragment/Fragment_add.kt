@@ -1,7 +1,6 @@
-package com.example.thigk.fragments.add
+package com.example.thigk.fragments.fragment
 
 import android.os.Bundle
-import android.text.Editable
 import android.text.TextUtils
 import android.view.LayoutInflater
 import android.view.View
@@ -9,14 +8,11 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import androidx.navigation.fragment.findNavController
 import com.example.thigk.Model.User
 import com.example.thigk.R
 import com.example.thigk.ViewModel.UserViewModel
 import kotlinx.android.synthetic.main.fragment_add.*
 import kotlinx.android.synthetic.main.fragment_add.view.*
-import kotlinx.android.synthetic.main.fragment_update.*
-import kotlinx.android.synthetic.main.fragment_update.view.*
 
 class fragment_add : Fragment() {
 

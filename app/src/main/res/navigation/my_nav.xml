@@ -8,7 +8,7 @@
 
     <fragment
         android:id="@+id/fragment_add"
-        android:name="com.example.thigk.fragments.add.fragment_add"
+        android:name="com.example.thigk.fragments.fragment.fragment_add"
         android:label="Đăng ký"
         tools:layout="@layout/fragment_add" >
         <action
