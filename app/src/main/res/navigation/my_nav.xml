@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/fragment_add">
+
+
+    <fragment
+        android:id="@+id/fragment_add"
+        android:name="com.example.thigk.fragments.add.fragment_add"
+        android:label="Đăng ký"
+        tools:layout="@layout/fragment_add" >
+        <action
+            android:id="@+id/action_fragment_add_to_fragment_update"
+            app:destination="@id/fragment_update" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_update"
+        android:label="Cập nhật tài khoản"
+        tools:layout="@layout/fragment_update" >
+        <argument
+            android:name="currentUser"
+            app:argType="com.example.thigk.Model.User" />
+        <action
+            android:id="@+id/action_fragment_update_to_fragment_add"
+            app:destination="@id/fragment_add" />
+    </fragment>
+</navigation>
